@@ -1,5 +1,9 @@
 package Shop;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
 public class mainLaptop {
     public static void main(String[] args) {
         Laptop L01 = new Laptop("Aser", 8, 128, "Windows10", "grey");
@@ -16,23 +20,15 @@ public class mainLaptop {
         Laptop L12 = new Laptop("Aser", 16, 512, "Windows11", "black");
         Laptop L13 = new Laptop("Asus", 16, 512, "Windows10", "grey");
         Laptop L14 = new Laptop("HP", 16, 512, "Windows11", "blue");
-        Laptop L15 = new Laptop("Lenovo", 16, 512, "Windows11", "black");
+        Laptop L15 = new Laptop("HP", 16, 512, "Windows11", "blue");
 
-        System.out.println(L01);
-        System.out.println(L02);
-        System.out.println(L03);
-        System.out.println(L04);
-        System.out.println(L05);
-        System.out.println(L06);
-        System.out.println(L07);
-        System.out.println(L08);
-        System.out.println(L09);
-        System.out.println(L10);
-        System.out.println(L11);
-        System.out.println(L12);
-        System.out.println(L13);
-        System.out.println(L14);
-        System.out.println(L15);
+        Set<Laptop> laptops = new HashSet<>(
+                Arrays.asList(L01, L02, L03, L04, L05, L06, L07, L08, L09, L10, L11, L12, L13, L14, L15));
+
+        for (Laptop el : laptops) { // перебираем коллекцию laptops
+            System.out.println(el);
+
+        }
 
     }
 
