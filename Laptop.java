@@ -37,11 +37,10 @@ public class Laptop {
         // и добавляем логические выражения сравнения пяти полей, которые должны быть
         // равны:
         return name.equals(lap.name) && // тип String сравниваем через equals
-                RAM == lap.RAM &&
-                HDD == lap.HDD && // сравниваем значения RAM (тип int)
-                OS.equals((lap.OS)) && // тип String сравниваем через equals
-
-                color.equals((lap.color)); // тип String сравниваем через equals
+                RAM == lap.RAM && // сравниваем значения RAM (тип int)
+                HDD == lap.HDD &&
+                OS.equals((lap.OS)) &&
+                color.equals((lap.color));
     }
 
     // переопределяем метод

@@ -53,7 +53,7 @@ public class mainLaptop {
         int HDDuser = sc.nextInt();
 
         // Проверка на корректность ввода
-        if ((RAMuser >= 33) || (HDDuser >= 1024)) {
+        if ((RAMuser >= 33) || (HDDuser >= 1025)) {
             System.out.println("Некорректный ввод!!!");
         }
 
